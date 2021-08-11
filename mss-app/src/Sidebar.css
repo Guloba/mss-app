@@ -1,0 +1,70 @@
+.side-bar{
+    display: flex;
+    flex: 0.35; 
+    flex-direction: column;  
+}
+.sidebar-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-right: 1px solid lightgray;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 10vw; 
+}
+.sidebar-search{
+    display: flex;
+    align-items: center; 
+    background-color: lightgray;
+    padding: 10px;
+    height: 39px;
+}
+.search-container{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    border-radius: 20px;
+
+}
+.search-container > input{
+  border: none;
+  margin-left: 10px;
+  outline-width: 0;
+  padding: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+.search-container >.MuiSvgIcon-root{
+    color: skyblue;
+    font-size: 30px !important;
+}
+.sidebar-chats{
+    flex: 1;
+    background-color:white;
+    overflow: scroll;
+}
+.chat-head{
+    color:skyblue;
+    border: 1px solid skyblue;
+    padding:10px;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    text-align: center;
+    margin-top: 5px;
+    cursor: pointer;
+    margin:5px; 
+}
+/* for google chrome */
+.sidebar-chats::-webkit-scrollbar{
+    display: none;
+}
+/* for internet explore ,Edge and fire fox */
+.sidebar-chats{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
